@@ -1,14 +1,16 @@
+package Entidades.Personagem;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class PersonagemBase {
-    String nome;
-    int forc;
-    int agi;
-    int inte;
-    int def;
-    int hp;
-    int mana;
+    private String nome;
+    private int forc;
+    private int agi;
+    private int inte;
+    private int def;
+    private int hp;
+    private int mana;
     Map<String, Integer> habilidades = new HashMap();
 
     public PersonagemBase(String nome, int forc, int agi, int inte, int def, int hp, int mana,  Map<String, Integer> habilidades) {
@@ -19,6 +21,7 @@ public class PersonagemBase {
         this.def = def;
         this.hp = hp;
         this.mana = mana;
+        this.habilidades = habilidades;
     }
 
     public String getNome() {
