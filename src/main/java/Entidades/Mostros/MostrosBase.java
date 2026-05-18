@@ -44,4 +44,12 @@ public class MostrosBase {
     public void setDefesa(int defesa) {
         this.defesa = defesa;
     }
+
+    @Override
+    public String toString() {
+        return "Monstro \n" + "{"+
+                "nome=" + getMostro() + "\n" +
+                "vida=" + vida +
+                '}';
+    }
 }

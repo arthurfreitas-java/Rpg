@@ -1,3 +1,5 @@
+package Entidades.Personagem;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -39,7 +41,7 @@ public class Personagens {
         Map<String, Integer> habilidades = new HashMap<>();
         habilidades.put("Escudo Divino", 15);
         habilidades.put("Espada Sagrada", 16);
-        habilidades.put("Espada Sagrada", 5);
+        habilidades.put("Mãozada", 5);
         return new PersonagemBase(nome,8, 4, 5, 10, 9, 2, habilidades);
     }
     // Necromante
